@@ -1,0 +1,29 @@
+<% include ../partials/header.ejs %>
+<style>
+        h1 {
+            margin-top: 60px;
+        }   
+    </style>
+<h1>Nova pessoa</h1>
+<%/*melhorar layout*/%>
+<p><a href="/pessoas/">Voltar a lista de pessoas</a></p>
+<form method="post">
+    <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o nome">
+    </div>
+
+    <div class="form-group">
+            <label for="nascimento">Nascimento</label>
+            <input type="text" class="form-control" id="nascimento" name="nascimento" placeholder="Digite a data de nascimento">
+    </div>
+
+    <div class="form-group">
+            <label for="cargo">Cargo</label>
+            <input type="text" class="form-control" id="cargo" name="cargo" placeholder="Digite o cargo">
+    </div>
+            
+    <button type="submit" class="btn btn-primary">Salvar</button>
+</form>
+
+<% include ../partials/footer.ejs %>
